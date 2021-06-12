@@ -11,16 +11,16 @@ import time
 import pyrogram
 from pyrogram import Client,filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from mwk.config import Config
-from mwk.messages import Translation
-from mwk.shamil.database import *
+from root.config import Config
+from root.messages import Translation
+from root.plugins.database import *
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
 
 @Client.on_message(filters.photo)
 async def save_photo(c,m):
-    v = await m.reply_text("Saving Thumbnail",True)
+    v = await m.reply_text("𝑻𝒉𝒖𝒎𝒃𝒏𝒂𝒊𝒍 𝒔𝒂𝒗𝒊𝒏𝒈.𝒑𝒍𝒆𝒂𝒔𝒆 𝒘𝒂𝒊𝒕𝒆☺️",True)
     if m.media_group_id is not None:
         # album is sent
         download_location = Config.DOWNLOAD_LOCATION + "/thumb/" + str(m.from_user.id) + "/" + str(m.media_group_id) + "/"
