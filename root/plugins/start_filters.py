@@ -9,12 +9,12 @@ from pyrogram.types import InlineKeyboardMarkup,InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
 
 if bool(os.environ.get("WEBHOOK", False)):
-    from mwk.config import Config
+    from root.config import Config
 else:
     from config import Config
 
 # the Strings used for this "thing"
-from mwk.messages import Translation
+from root.messages import Translation
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
