@@ -1,9 +1,9 @@
 class Translation(object):
-    START_TEXT = "**I'm a Rename and Convert Bot\nJust send me any media to change file name.\nUse /help command for more details **"
-######################
-    HELP_USER = """**>>Send File/Video\n>>Select desired Option\n>>And Done wait for it to process files**"""
-    DOWNLOAD_MSG = "**Downloading **⏬"
+    START_TEXT = "**🤓👋ʜɪ ʜᴇʟᴏᴏ,\n✏️𝐈 𝐀𝐌 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌 𝐅𝐈𝐋𝐄 𝐑𝐄𝐍𝐀𝐌𝐄𝐑 𝐑𝐎𝐁𝐎𝐓📝\n\n💡𝗡𝗢𝗧𝗘 :-\n🥳𝑺𝒆𝒏𝒅 𝒎𝒆 𝒂𝒏𝒚 𝑭𝒊𝒍𝒆, 𝒊 𝒄𝒂𝒏 𝑹𝒆𝒏𝒂𝒎𝒆 𝑰𝒕 𝑨𝒔 𝑷𝒆𝒓 𝒀𝒐𝒖𝒓 𝒄𝒉𝒐𝒊𝒄𝒆𝒔 𝒕𝒐 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝒂𝒔 𝑭𝒊𝒍𝒆/𝑽𝒊𝒅𝒆𝒐.🎬\n\n🔬𝙱𝙾𝚃 𝙼𝙰𝙸𝙽𝚃𝙰𝙸𝙽𝙴𝙳 𝙱𝚈 :- [🛡️ᴅʙ ʀᴏʙᴏᴛs🛡️](http://t.me/DB_ROBOTS)**"
+###############
+    HELP_USER = """**💡𝗕𝗢𝗧'𝗦 𝗛𝗘𝗟𝗣\n\n🔰 Sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ Fɪʟᴇ/Vɪᴅᴇᴏ,\n\n🔰 Cʜᴏᴏsᴇ Yᴏᴜʀ ᴅᴇsɪʀᴇᴅ Oᴘᴛɪᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ,\n\n🔰 Wᴀɪᴛ ғᴏʀ ɪᴛ ᴛᴏ ᴘʀᴏᴄᴇss ғɪʟᴇs, \n\n🔰 ʀᴇᴀᴅ ᴛʜᴇ ɪɴsᴛʀᴜᴄᴛɪᴏɴ ɴᴇᴀᴛʟʏ,\n\n🔬𝙱𝙾𝚃 𝙼𝙰𝙸𝙽𝚃𝙰𝙸𝙽𝙴𝙳 𝙱𝚈 :- [🛡️ᴅʙ ʀᴏʙᴏᴛs🛡️](http://t.me/DB_ROBOTS**"""
+    DOWNLOAD_MSG = "**🕵️ʏᴀᴀ, ɪᴛs ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴛᴀʏ ᴛᴜɴᴇᴅ**🤫"
     DOWNLOAD_FAIL_MSG = "**Failed to Download File**❎"
-    UPLOAD_MSG = "**Uploading** ⏫"
+    UPLOAD_MSG = "🕺ʏᴇs, ᴜʀs ғɪʟᴇ ᴜᴘʟᴏᴀᴅɪɴɢ ᴠᴇʀʏ sᴏᴏɴ**🤓"
     UPLOAD_FAIL_MSG = "**Failed to Upload File**❎"
-    UPLOAD_DONE_MSG = "**Uploaded Successfully 💡"
+    UPLOAD_DONE_MSG = "***🥳𝒀𝑬𝑨𝑯,\n🔰𝑭𝒊𝒏𝒂𝒍𝒚 𝒖𝒑𝒍𝒐𝒂𝒅𝒆𝒅 𝒖𝒓𝒔 𝒇𝒊𝒍𝒆,𝑰𝒇 𝒖 𝒍𝒊𝒏𝒌 𝒕𝒉𝒊𝒔 𝑩𝒐𝒕,𝒑𝒍𝒛 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒂𝒍𝒍 𝒄𝒉𝒂𝒏𝒏𝒆𝒍𝒔 🔰\n\n🔬𝙱𝙾𝚃 𝙼𝙰𝙸𝙽𝚃𝙰𝙸𝙽𝙴𝙳 𝙱𝚈 :- [🛡️ᴅʙ ʀᴏʙᴏᴛs🛡️](http://t.me/DB_ROBOTS)**"
