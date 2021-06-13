@@ -1,12 +1,12 @@
 import pyrogram
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup,ForceReply
-from mwk.shamil.shamil import *
-from mwk.shamil.uploader import uploader
+from root.plugins.plugins import *
+from root.plugins.uploader import uploader
 import asyncio
-from mwk.messages import Translation
-from mwk.config import Config
-from mwk.shamil.database import *
+from root.messages import Translation
+from root.config import Config
+from root.plugins.database import *
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -41,7 +41,7 @@ async def rep_rename_call(c, m):
       else:
         asyncio.create_task(renamer(c, m))
     else:
-        print('No media present')
+        print('No media present????🤔')
 
 
 async def renamer(c,m,as_file=False):
