@@ -15,7 +15,7 @@ class Config(object):
   DOWNLOAD_LOCATION = "./bot/DOWNLOADS"
   DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Prorenamer:Prorenamer@prorenamer.2sj6d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
   # owner is for log cmd only owner can use (this can be multiple users)
-  OWNER_ID = [int(i) for i in os.environ.get("OWNER_ID", "1086432320"").split(" ")]
+  OWNER_ID = [int(i) for i in os.environ.get("1086432320", "").split(" ")]
   OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "Deeks_04_8")
   CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION",False)
 
