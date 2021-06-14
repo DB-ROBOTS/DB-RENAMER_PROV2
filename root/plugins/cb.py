@@ -1,12 +1,12 @@
 import pyrogram
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup,ForceReply
-from root.plugins.plugins import *
+from root.plugins.plugins import plugins
 from root.plugins.uploader import uploader
 import asyncio
 from root.messages import Translation
 from root.config import Config
-from root.plugins.database import *
+from root.plugins.database import database
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
