@@ -11,9 +11,7 @@ and Auto detection !!
 Use [Rename Robot](https://t.me/RenameDuniaBot) 
 
 #### The Simple Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?
-template:https://github.com/DB-ROBOTS/DB-RENAMER_PROV2)
-
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template= https://github.com/DB-ROBOTS/DB-RENAMER_PROV2/edit/main/README.mdhttps://github.com/DB-ROBOTS/DB_)
 #### Hard Way (VPS)
 * This is just a demo of commands to use
 ```
