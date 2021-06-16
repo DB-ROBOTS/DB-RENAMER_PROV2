@@ -28,9 +28,13 @@ async def help_user(c,m):
         
 @Client.on_message(filters.command("start"))
 async def start_msg(c,m):
-    button = [[
-               InlineKeyboardButton("Owner ", url=f"https://t.me/{Config.OWNER_USERNAME}")
-             ]]
+    button = [               [
+                InlineKeyboardButton("🔬𝙹𝙾𝙸𝙽 𝙾𝚄𝚁𝚂 𝙱𝙾𝚃𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻🎬", url=f"https://t.me/DB_ROBOTS")],
+                   [ InlineKeyboardButton("🎬𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙰𝙻𝙻 𝙼𝙾𝚅𝙸𝙴𝚂 𝙲𝙷𝙻🎬", url=f"https://t.me/UNI_MOVIES_BOX")
+                ],
+                [
+                    InlineKeyboardButton("👨‍🔬 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 🛡️", url=f"https://t.me/Deeks_04_8")
+                ]]
     markup = InlineKeyboardMarkup(button) 
     try:
        await m.reply_text(Translation.START_TEXT,quote=True,reply_markup=markup,disable_web_page_preview=True) 
