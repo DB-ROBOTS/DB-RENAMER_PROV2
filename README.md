@@ -11,9 +11,10 @@ and Auto detection !!
 Use [Rename Robot](https://t.me/RenameDuniaBot) 
 
 #### The Simple Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template= https://github.com/DB-ROBOTS/DB-RENAMER_PROV2/edit/main/README.mdhttps://github.com/DB-ROBOTS/DB_)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DB-ROBOTS/DB-RENAMER_PROV2)
+
 #### Hard Way (VPS)
-* This is just a demo of commands to use
+* This is just a demo of commands to us
 ```
 git clone https://github.com/mrvishal2k2/TG-RenameBot
 virtualenv -p /usr/bin/python3 venv
