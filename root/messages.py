@@ -6,4 +6,4 @@ class Translation(object):
     DOWNLOAD_FAIL_MSG = "**Failed to Download File**❎"
     UPLOAD_MSG = "🕺ʏᴇs, ᴜʀs ғɪʟᴇ ᴜᴘʟᴏᴀᴅɪɴɢ ᴠᴇʀʏ sᴏᴏɴ**🤓"
     UPLOAD_FAIL_MSG = "**Failed to Upload File**❎"
-    UPLOAD_DONE_MSG = "***🥳𝒀𝑬𝑨𝑯,\n🔰𝑭𝒊𝒏𝒂𝒍𝒚 𝒖𝒑𝒍𝒐𝒂𝒅𝒆𝒅 𝒖𝒓𝒔 𝒇𝒊𝒍𝒆,𝑰𝒇 𝒖 𝒍𝒊𝒏𝒌 𝒕𝒉𝒊𝒔 𝑩𝒐𝒕,𝒑𝒍𝒛 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒂𝒍𝒍 𝒄𝒉𝒂𝒏𝒏𝒆𝒍𝒔 🔰\n\n🔬𝙱𝙾𝚃 𝙼𝙰𝙸𝙽𝚃𝙰𝙸𝙽𝙴𝙳 𝙱𝚈 :- [🛡️ᴅʙ ʀᴏʙᴏᴛs🛡️](http://t.me/DB_ROBOTS)**"
+    UPLOAD_DONE_MSG = "***🥳𝒀𝑬𝑨𝑯,\n🔰𝑭𝒊𝒏𝒂𝒍𝒚 𝒖𝒑𝒍𝒐𝒂𝒅𝒆𝒅 𝒖𝒓𝒔 𝒇𝒊𝒍𝒆,𝑰𝒇 𝒖 𝒍𝒊𝒏𝒌 𝒕𝒉𝒊𝒔 𝑩𝒐𝒕,𝒑𝒍𝒛 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒂𝒍𝒍 𝒄𝒉𝒂𝒏𝒏𝒆𝒍𝒔 🔰\n\n🔬𝙱𝙾𝚃 𝙼𝙰𝙸𝙽𝚃𝙰𝙸𝙽𝙴𝙳 𝙱𝚈 :- [🛡️ᴅʙ ʀᴏʙᴏᴛs🛡️](http://t.me/DB_ROBOTS) **"
