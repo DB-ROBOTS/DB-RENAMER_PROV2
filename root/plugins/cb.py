@@ -1,12 +1,18 @@
+'''
+RenameBot
+This file is a part of mrvishal2k2 rename repo 
+Dont kang !!!
+© Mrvishal2k2
+'''
 import pyrogram
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup,ForceReply
-from root.plugins.plugins import plugins
-from root.plugins.uploader import uploader
+from root.utils.utils import *
+from root.utils.uploader import uploader
 import asyncio
 from root.messages import Translation
 from root.config import Config
-from root.plugins.database import database
+from root.utils.database import *
 import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -22,7 +28,7 @@ async def rename_call(c,m):
     pass
   await m.message.delete()
   await c.send_message(
-    text=f"Mode: {mode} \🥳🔰𝗡𝗼𝘄 𝗦𝗲𝗻𝘁 𝗡𝗲𝘄 𝗙𝗶𝗹𝗲 𝗡𝗮𝗺𝗲 𝗪𝗶𝘁𝗵out 𝗘𝘅𝘁𝗲𝗻𝘀𝗶𝗼𝗻              💡 𝙴𝚐: 𝙽𝚎𝚠 𝙽𝚊𝚖𝚎💡",
+    text=f"Mode: {mode} \nNow send me new file name without extension",
     chat_id=m.message.chat.id,
     reply_to_message_id=m.message.reply_to_message.message_id,
     reply_markup=ForceReply(True)
@@ -41,7 +47,7 @@ async def rep_rename_call(c, m):
       else:
         asyncio.create_task(renamer(c, m))
     else:
-        print('No media present????🤔')
+        print('No media present')
 
 
 async def renamer(c,m,as_file=False):
@@ -52,12 +58,12 @@ async def renamer(c,m,as_file=False):
   media = todown.document or todown.video or todown.audio or todown.voice or todown.video_note or todown.animation
   try:
     media_name = media.file_name
-    extension = media_name.split(".",1)[-1]
+    extension = media_name.split(".")[-1]
   except:
     extension = "mkv"
   await bot_msg.delete() # delete name asked msg 
   if len(new_f_name) > 64:
-      await m.reply_text(text=f"Limits of telegram file name is 64 charecters only\nReduce some Charecters and retry.")
+      await m.reply_text(text=f"Limits of telegram file name is 64 charecters only\nReduce some and try again.")
       return
   d_msg = await m.reply_text(Translation.DOWNLOAD_MSG,True)
   d_location = Config.DOWNLOAD_LOCATION + "/" + str(m.chat.id) + "/"

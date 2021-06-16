@@ -1,3 +1,10 @@
+'''
+RenameBot
+Thanks to Spechide Unkle as always fot the concept  ♥️
+This file is a part of mrvishal2k2 rename repo 
+Dont kang !!!
+© Mrvishal2k2
+'''
 
 import logging
 logging.basicConfig(level=logging.DEBUG,
@@ -13,14 +20,14 @@ from pyrogram import Client,filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from root.config import Config
 from root.messages import Translation
-from root.plugins.database import *
+from root.utils.database import *
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 
 
 @Client.on_message(filters.photo)
 async def save_photo(c,m):
-    v = await m.reply_text("𝑻𝒉𝒖𝒎𝒃𝒏𝒂𝒊𝒍 𝒔𝒂𝒗𝒊𝒏𝒈.𝒑𝒍𝒆𝒂𝒔𝒆 𝒘𝒂𝒊𝒕𝒆☺️",True)
+    v = await m.reply_text("Saving Thumbnail",True)
     if m.media_group_id is not None:
         # album is sent
         download_location = Config.DOWNLOAD_LOCATION + "/thumb/" + str(m.from_user.id) + "/" + str(m.media_group_id) + "/"
@@ -40,7 +47,7 @@ async def save_photo(c,m):
             file_name=download_location
         ) 
         try:
-           await v.edit_text("📬𝘾𝙐𝙎𝙏𝙊𝙈 𝙏𝙃𝙐𝙈𝘽𝙉𝘼𝙄𝙇 𝙎𝘼𝙑𝙀𝘿 𝙎𝙐𝘾𝘾𝙎𝙀𝙎𝙁𝙐𝙇𝙔,𝙐 𝘾𝘼𝙉 𝙈𝙊𝙑𝙀 𝙊𝙉🗃️")
+           await v.edit_text("Thumbnail Saved Successfully.. 😍")
         except Exception as e:
           log.info(f"#Error {e}")
 
@@ -52,12 +59,12 @@ async def delete_thumbnail(c,m):
         await del_thumb(m.from_user.id)
     except:
         pass
-    await m.reply_text("💥𝙎𝙐𝘾𝘾𝙎𝙀𝙎𝙁𝙐𝙇𝙔 𝘿𝙀𝙇𝙀𝘼𝙏𝙀𝘿 𝙎𝘼𝙑𝙀𝘿 𝙏𝙃𝙐𝙈𝘽𝙉𝘼𝙄𝙇🚮",quote=True)
+    await m.reply_text("Thumbnail was removed Successfully 😋",quote=True)
 
 @Client.on_message(filters.command(["showthumb"]))
 async def show_thumbnail(c,m):
     thumb_image_path = Config.DOWNLOAD_LOCATION + "/thumb/" + str(m.from_user.id) + ".jpg"
-    msgg = await m.reply_text("🤔𝘾𝙃𝙀𝘾𝙆𝙄𝙉𝙂 𝙎𝘼𝙑𝙀𝘿 𝙏𝙃𝙐𝙈𝘽𝙉𝘼𝙄𝙇...🕵‍♂️",quote=True)
+    msgg = await m.reply_text("Checking Thumbnail...",quote=True)
 
     if not os.path.exists(thumb_image_path):
         mes = await thumb(m.from_user.id)
@@ -70,7 +77,7 @@ async def show_thumbnail(c,m):
 
     if thumb_image_path is None:
         try:
-            await msgg.edit_text("🤔𝙉𝙊 𝙎𝘼𝙑𝙀𝘿 𝙏𝙃𝙐𝙈𝘽𝙉𝘼𝙄𝙇 𝙁𝙐𝙉𝘿!! 😐😐")
+            await msgg.edit_text("No Saved Thumbnail Found!!")
         except:
               pass               
     else:
@@ -82,7 +89,7 @@ async def show_thumbnail(c,m):
 
         await m.reply_photo(
         photo=thumb_image_path,
-        caption="🌈𝙏𝙝𝙞𝙨 𝙞𝙨 𝙩𝙝𝙚 𝙎𝙖𝙫𝙚𝙙 𝙏𝙝𝙪𝙢𝙗𝙣𝙖𝙞𝙡!!!\n🙂𝙔𝙤𝙪 𝘾𝙖𝙣 𝙙𝙚𝙡𝙚𝙩𝙚 𝙩𝙝𝙞𝙨 𝙗𝙮 𝙪𝙨𝙞𝙣𝙜 \n/deletethumb 𝘾𝙤𝙢𝙢𝙖𝙣𝙙!!\n\n 🥰𝙎𝙐𝙋𝙋𝙊𝙍𝙏 :- 𝘿𝘽-𝙍𝙊𝘽𝙊𝙏𝙎😎",
+        caption="This is the Saved Thumbnail!!!\nYou Can delete this by using \n/deletethumb Command",
         quote=True
     )
 
